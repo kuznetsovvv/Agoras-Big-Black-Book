@@ -1,0 +1,165 @@
+html{
+    min-height: 100vh;
+    background: rgb(232, 232, 232);
+    background:linear-gradient(to right, rgb(224, 224, 224), rgb(240, 240, 240), rgb(240, 240, 240), rgb(240, 240, 240), rgb(240, 240, 240), rgb(224, 224, 224));
+}
+#toc a{
+    color:white;
+    text-decoration:none;
+}
+#toc a:hover{
+    color:white;
+    text-decoration:underline;
+}
+#loading{
+    margin:auto;
+    width: 100px;
+    height:auto;
+}
+#headLeft #searcharea{
+    padding: 2px;
+    margin: 0;
+}
+#headLeft #searcharea *{
+    line-height: 1.5;
+    padding: 2px;
+    font-size: 15px;
+}
+#bbbtoc{
+    width:100%;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    background: #262626;
+    z-index:10;
+    position:relative;
+    display:none;
+}
+#toc{
+    text-align: center;
+}
+.bottomwidthlimit{
+    max-width:1400px;
+    width:90vw;
+    margin:auto;
+}
+#tocbooklimit{
+    max-width:none;
+    width:100%;
+    background: #262626;
+    background: linear-gradient(#262626, #262626, #131313);
+    margin-bottom: -64px;
+    padding-bottom: 64px;
+    z-index: 2;
+    position: relative;
+}
+#toc *{
+    z-index:20;
+}
+.Book{
+    float:left;
+    width:100%;
+    position:relative;
+    padding: 1px 0.3vw 0 0.3vw;
+    margin: 0 0 0 0;
+    text-align: center;
+    background: none;
+    color: #ffffff;
+    z-index:1;
+}
+.tocCol{
+    float:left;
+    width:100%;
+    position:relative;
+    padding: 1px 0.5vw 0 0.5vw;
+    margin: 0 0 0 0;
+    text-align: center;
+    background: none;
+    color: #ffffff;
+    z-index:1;
+}
+.tocCol > p{
+    text-align: left;
+    line-height:1.05;
+}
+.tocCol > p, .Book > h3, .tocCol > p > a, .Book > h3 > a{
+    color:white; 
+    text-decoration:none;
+    margin: 0 0 16px 0;
+}
+.tocCol > p > a:hover, .Book > h3 > a:hover{
+    color: #fe7030;
+}
+.tocCol > p > a,.tocCol > p{
+    color:#cccccc; 
+    display: none;
+}
+.Book h3{
+    margin: 0 2px;
+    font-size: 15px;
+    line-height:1.1;
+}
+.tocCol > p > a{
+    font-size: 13px;
+}
+.chapCol{
+    float:left;
+    width:97%;
+    margin:1.5%;
+}
+.Book h3{
+    margin: 1em 0;
+}
+@media screen and (min-width: 740px){
+   .chapCol{
+        width:30.33%;
+    } 
+    .Book{
+        width:24%;
+        margin: 0 0.5% 0 0.5%;
+    }
+    .tocCol{
+        width:20%;
+        margin: 0 2.5% 0 2.5%;
+    }
+    .tocCol > p > a,.tocCol > p{
+        color:#cccccc;
+        display:block;
+    }
+}
+.Chapter{
+    margin:0;
+    text-align: left;
+    padding: 1px 0.5vw 9px 0.5vw;
+}
+.Chapter p,.Chapter h3{
+    margin:0;
+    padding:0;
+    font-weight:bold;
+}
+.Chapter ul{
+    margin: 0 0 0 1vw;
+    padding:0;
+    list-style-type: none;
+}
+.clearfix{
+    visibility:hidden;
+    height:0;
+    clear:both;
+}
+.tocbooks{
+    display:none;
+    /*float:left;
+    width:25%;
+    border: 1px solid red;*/
+}
+#copyrightStatement{
+    font-size:9px;
+    color:#888888;
+    line-height:1.25;
+    display:inline-block;
+    width: 100%;
+    text-align: center;
+    position:relative;
+    z-index:4;
+}

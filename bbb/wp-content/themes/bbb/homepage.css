@@ -1,0 +1,529 @@
+@font-face{
+    font-family:symbolsupport;
+    src: url('https://agorasbigblackbook.com/fontawesome-webfont.woff');
+}
+@font-face{
+    font-family:goudy;
+    src: url('https://agorasbigblackbook.com/GoudyStM-webfont.woff');
+}
+.symbol{
+    font-family:symbolsupport, webdings;
+    font-size: 40px;
+    line-height: 1;
+	vertical-align: middle;
+}
+.smallhidetext{
+    display:none;
+	vertical-align: middle;
+}
+div.site-branding{
+    background-color: #404040;
+    background-image: url("https://agorasbigblackbook.com/wp-content/uploads/2017/03/BBBhomescreenbackground.png");
+    height:617px;
+    width:100%;
+    z-index: 41;
+}
+#headLeft{
+    width:60%;
+    float:left;
+    text-align: left;
+    max-width: 350px; 
+}
+#headMid{
+    margin:0 auto;
+    text-align: center;
+    display:none;
+    max-width:1100px;
+    width: 60%;
+}
+#headRight{
+    width:40%;
+    float:right;   
+    text-align: right; 
+    max-width: 350px; 
+}
+#headLeft, #headMid, #headRight{
+    overflow:visible;
+    background: none;
+    background-color: rgba(1,1,1,0);
+    color: rgba(1,1,1,0);
+}
+#headLeft *, #headMid *, #headRight *{
+    clear:none;
+    padding: 4px; 2%;
+}
+
+
+#closeOverlay{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(48,48,48,0.35);
+    z-index: 5;
+    display:none;
+}
+#chapcol{
+    float: left;
+    width: 50%;
+    border-right: 1px solid #cccccc;
+    padding: 0 5%;
+}
+#contcol{
+    float: left;
+    width: 50%;
+    border-left: 1px solid #cccccc;
+    margin: 0 0 0 -1px;
+    padding: 0 5%;
+}
+#contcol *{
+    line-height: 1.5;
+    color: #000000;
+}
+#contcol ul{
+    list-style-type: none;
+    padding: 0;
+    line-height: 1;
+    margin: 0;
+}
+#contcol li{
+    font-size: 15px;
+    line-height: 1;
+    padding: 16px 0 0 0;
+}
+#contcol a{
+    font-size: 15px;
+    line-height: 1;
+}
+#contcol p{
+    font-size: 15px;
+    font-weight: bold;
+    line-height:1;
+    margin: 0;
+    padding: 0 0 0 0;
+}
+#dropdowntwo hr{
+    color: #cccccc;
+}
+#dropdownbutton{
+    font-size:12px;
+    background:#000000;  
+    color: #dddddd;
+    border-radius: 10px;
+    text-align: center;
+    z-index:42;
+    line-height: 1.5;
+    float:left;
+}
+#searchbutton{
+    font-size:12px;
+    background:#000000; 
+    color: #dddddd;
+    border-radius: 10px;
+    text-align: left;
+    z-index:42;
+    line-height: 1.5;
+    float:left;
+}
+#homebutton{
+    font-size:12px;
+    background:#000000; 
+    color: #dddddd;
+    border-radius: 10px;
+    text-align: left;
+    z-index:42;
+    line-height: 1.5;
+    float:left;
+    display:block;
+}
+#logotitle{                                
+    font-size:22px;
+    background:#000000; 
+    color: #dddddd;
+    border-radius: 10px;
+    text-align: center;
+    z-index:42;
+    font-weight: 100;
+    line-height: 1;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+    z-index:53;
+}
+#searcharea{
+    font-size:22px;
+    background:#000000; 
+    color: #dddddd;
+    border-radius: 10px;
+    text-align: center;
+    z-index:64;
+    line-height: 1.5;
+    position:absolute;
+    width:100%;
+    max-width: 480px;
+}
+#searcharea input{
+    width:100%;
+}
+#logout, #changepass{                                   
+    font-size:12px;
+    color: #dddddd;
+    border-radius: 10px;
+    float: right;
+    z-index:42;
+    line-height: 1.5;
+}
+#dropdownbutton:hover, #searchbutton:hover, #logout:hover, #changepass:hover, #homebutton:hover, #logotitle:hover{
+    color: #fe7030;
+    cursor:pointer;
+}
+#greybar{
+    display:block;
+    background-color: #cccccc;
+    margin: 0;
+    padding: 4px 0 0 0;
+}
+#ActiveWideBook{
+    color:#fe7030;
+    margin-bottom: 0;
+}
+.bigButtonArea{                                   
+    font-size:22px;
+    background:#000000; 
+    color: #dddddd; 
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 100;
+    line-height: 1;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+    z-index:53;
+    margin:auto;
+    width:100%;
+}
+.bigButtonArea .wideBook{
+    padding: 2px 1%;
+    font-size: 15px;
+    width: 24.25%;
+    white-space: nowrap;
+}
+.bigButtonArea .wideBook, .bigButtonArea .wideBook *{
+    display:inline-block;
+    color:#FFFFFF;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.5;
+    text-decoration: none;
+}
+.bigButtonArea .wideBook a{
+    font-size: 15px;
+}
+.bigButtonArea .wideBook:hover, .bigButtonArea .wideBook:hover * {
+    color:#fe7030;
+    cursor: pointer;
+}
+.site-branding form .search-field{
+    height:2em;
+    border-radius:3px;
+    width:100%;
+}
+.site-branding form .search-field:focus{
+    outline-width: 0;
+}
+.site-branding form, .site-branding label{
+    width:100%;
+}
+#masthead form input{
+    font-size: 22px;
+    height:2em;
+    -webkit-appearance:none;
+}
+.search-submit{
+    display:none;
+    visibility: hidden;
+}
+.widthlimit{
+    max-width:900px;
+    width:90vw;
+    margin:auto;
+}
+div.site-branding .widthlimit{
+    height:100%;
+    width:100%;
+}
+.center{
+    text-align: center;
+    width: 100%;
+    margin:auto;
+}
+h3.homepageSubhead, .site-title{
+    text-align: center;
+    width: 100%;
+    margin:auto;
+    font-family:Helvetica,helvetica-w01-light,helvetica-w02-light,sans-serif;
+    font-weight: normal;
+    color: #404040;
+    text-transform: uppercase;
+    display:inline-block;
+}
+.site-title img{
+    background: #000000;
+    padding: 12px 0;
+    border: none; /*1px solid #333333;*/
+}
+h1.site-title, h1.site-title a{
+    color:white;
+    text-decoration: none;
+    font-size:109px;
+    line-height: 1;
+}
+h2.site-title, h2.site-title a{
+    color:white;
+    text-decoration: none;
+    font-size:65px;
+    line-height: 1;
+}
+.floater{
+    float:left;
+    width:40%;  
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display:inline-block;
+}
+.floater2{
+    float:left;
+    width:60%;  
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display:inline-block;
+}
+#blackbar{
+    position: fixed;
+    z-index:20;
+    width: 100%;
+    background-color:#000000; 
+    font-size: 16px; 
+    display:inline-block;
+    line-height: 1;
+}
+#ddbookcol{
+    float: left;
+    width: 100%;
+    max-width: 500px;
+    border-left: none;
+    border-right: 1px solid #cccccc;
+}
+#ddbookcol h3{
+    margin: 0;
+}
+.ddBook{
+    border:none;
+    border-bottom: 1px solid #cccccc;
+    background: #ffffff;
+    color: #000000;
+    padding: 2% 10%;
+    text-align: center;
+}
+.ddBook:hover{
+    cursor:pointer;
+    color: #fe7030;
+}
+.ddBook *{
+    margin-top:0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+.ddBook p{
+    line-height: 1.2;
+}
+.ddbookc{
+    background:#262626;
+}
+.ddbookc *{
+    color: #ffffff;
+    text-align: left;
+}
+.ddbookc p:hover{
+    color: #fe7030;
+}
+#dropdownchapters{
+    display:none;
+    float: left;
+    /*overflow-y:auto;*/
+    max-height:80vh;
+    border-left: 1px solid #cccccc;
+    margin: 0 0 0 -1px;
+}
+#dropdownchapters p{
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+#dropdownchapters hr{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+#dropdownchapters ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 0 20px;
+}
+#dropdownchapters ul li{
+    padding: 2% 10px 2% 0;
+}
+#dropdownchapters ul *{
+    font-size: 16px;
+}
+#dropdownchapters *{
+    font-size: 15px;
+}
+#dropdowntwo{    
+    background: #EEEEEE;
+    color:#333333;
+    z-index:40;
+    width:100%;
+    float:left;
+    display:inline-block;
+    line-height: 1.5;
+    /*box-shadow: 5px 5px 12px #555555;*/
+    position:fixed;
+    overflow-y:auto;
+}
+#ddtwocenter{
+    overflow-y:wrap;
+    padding: 18px 0 18px 0;
+}
+#dropdown{    
+    background: #EEEEEE;
+    color:#333333;
+    z-index:40;
+    float:left;
+    display:inline-block;
+    line-height: 1.5;
+    /*box-shadow: 5px 5px 12px #555555;*/
+    position:fixed;
+    overflow-y: scroll;
+    max-height: 90vh;
+}
+#dropdowntwo{
+    max-height:80vh;
+}
+#chapcol *,#chapcol a{
+    color:#000000;
+    font-size: 15px;
+    margin: 15px 0;
+}
+#chapcol p{
+    padding: 16px 0 0 0;
+    line-height: 1;
+    margin: 0;
+    cursor:pointer;
+    text-align: right;
+}
+#chapcol p:hover{
+    color: #fe7030;
+}
+#chapcol p:first-of-type{
+    padding: 0 0 0 0;
+    margin: 0;
+    cursor:default;
+    line-height: 1
+}
+#chapcol p:first-of-type:hover{
+    color: #000000;
+}
+#dropdowntwo a{
+    text-decoration:none;
+}
+#dropdowntwo a:hover{
+    color:#fe7030;
+}
+#ActiveddBook *{
+    font-weight:bold;
+    color:#fe7030;
+}
+#ActiveWideBook{
+    color:#fe7030;
+    margin-bottom: 0;
+}
+#ActiveColChap{
+    color:#fe7030;
+    font-weight: bold;
+}
+#dropdown a{
+    color:#333333;
+    text-decoration:none;
+}
+#dropdownchapters{
+    width: auto;
+    height:100%;
+}
+#dropdown a:hover{
+    color:#fe7030;
+}
+@media screen and (min-width: 481px){
+    #dropdown, #dropdowntwo{
+        overflow-y:visible;
+    }
+    .symbol{
+        font-size:26px;
+        line-height: 1.1;
+    }
+}
+@media screen and (min-width: 1000px){
+    .ddBook *{
+        margin: 0.6em 0;
+    }
+    #dropdownchapters *{
+        font-size: 1.4vw;
+    }
+    #homebutton{
+        display:none;
+    }
+    #headMid{                                
+        display:block;
+    }
+    #headLeft{
+        width:20%;
+    }
+    #headRight{
+        width:20%;
+    }
+    .smallhidetext{
+        display:inline;
+    }
+    #headMid .wideBook{                                
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 1160px){
+    #headMid .wideBook{                                
+        font-size: 15px;
+    }
+}
+#triangle{
+    visibility: hidden;
+    display:none;
+    position:fixed;
+    font-size: 40px;
+    vertical-align: bottom;
+    line-height: 1;
+    left: 258px;
+    z-index:420;
+    color: #EEEEEE;
+    text-shadow: -1px 0px #cccccc;
+}
+@media screen and (min-width: 800px){
+    #triangle{
+        visibility: visible;
+    }
+    #ddbookcol{
+        width: 270px;
+        max-width: none;
+    }
+}

@@ -1,0 +1,960 @@
+@font-face{
+    font-family:symbolsupport;
+    src: url('https://agorasbigblackbook.com/fontawesome-webfont.woff');
+}
+@font-face{
+    font-family:goudy;
+    src: url('https://agorasbigblackbook.com/GoudyStM-webfont.woff');
+}
+#author-bio{
+    max-height:176px;
+    overflow: hidden;
+}
+.nextEntryLink a, .nextEntryLink a:visited, .nextEntryArrow *, .previousEntryLink a, .previousEntryLink a:visited, .previousEntryArrow *{
+    color:#FE7030;
+    text-decoration: none;
+}
+.bigNext .symbol{
+    right: 10%;
+}
+.bigPrev .symbol{
+    left: 10%;
+}
+.bigNext, .bigPrev, .bigNext .symbol, .bigPrev .symbol{
+    font-size: 40px;
+    color:#888888;
+    text-decoration: none;
+    position: fixed;
+    top: 50%;
+    z-index: 1;
+    display:none;
+}
+.elipses{
+    height: 24px; 
+    margin: /*-24px 0 0 0*/0;
+    padding: 0 0 0 10%;
+    z-index: 0;
+    overflow: hidden;
+    background: none;
+    float:left;
+    width:100%;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+}
+.contentsEntry{
+    display: inline-block;
+    width:100%;
+    position: relative;
+}
+.contentsEntry a{
+    z-index: 1;
+    display: inline-block;
+    position: relative;
+}
+.contentsEntryTitle{
+    float: left;
+    padding-left: 5%;
+    width: 100%;
+    display: inline-block;
+}
+.contentsEntryAuthor{
+    float: left;
+    z-index: 5;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+}
+.contentsEntryAuthor span{
+    position:relative;
+    text-align: left;
+    z-index: 1;
+    padding-left: 10%;
+}
+.contentsEntryTitle span{
+    font-size: 20px !important;   
+}
+#biomore{
+    color:#fe7030;
+    text-align: center;
+    margin: -48px 0 0 0;
+    padding: 48px 0 0 0;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) );
+    z-index: 3;
+    position:relative;
+    display:block;
+    width:100%;
+}
+#biomoredark{
+    color:#fe7030;
+    text-align: center;
+    margin: -48px 0 0 0;
+    padding: 48px 0 0 0;
+    background: linear-gradient(0deg, rgba(38, 38, 38, 1), rgba(38, 38, 38, 1), rgba(38, 38, 38, 0.7), rgba(38, 38, 38, 0) );
+    z-index: 3;
+    position:relative;
+    display:block;
+    width:100%;
+}
+#biomore a:hover, #biomoredark a:hover{
+    cursor:pointer;    
+}
+#bioless{
+    color:#fe7030;
+    text-align: center;
+    margin: 0;
+    padding: 8px 0 0 0;
+    z-index: 4;
+    position:relative;
+    display:none;
+    width:100%;
+}
+#bioless a:hover{
+    cursor:pointer;    
+}
+.symbol{
+    font-family:symbolsupport, webdings;
+    font-size: 40px;
+    line-height: 1;
+	vertical-align: middle;
+}
+.smallhidetext{
+    display:none;
+	vertical-align: middle;
+}
+div.site-branding{
+    background-color: #000000;
+    width:100%;
+    display: inline-block; 
+    position: fixed;
+}
+#smallbranding{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 45;
+}
+#brandingimg{
+    height:auto;
+    max-width: 180px;
+    float:left;
+    width:10%;
+    padding: 1%;
+    transition-property: max-width;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+#brandingMenuButton{
+    height:100%;
+    max-width: 180px;
+    float:left;
+    width:10%;
+    transition-property: max-width;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    padding:1%;
+}
+#headsearch{
+    width:80%;
+    display:inline-block;
+    padding: 1% 1% 0 1%;
+    float:left;
+    font-size: 20px;
+}
+#smallbranding #brandingimg{
+    float:left;
+    width:5%;    
+}
+#smallbranding #brandingMenuButton{
+    float:left;
+    width:10%;    
+}
+#smallbranding #dropdownbutton{
+        font-size:32px;
+        line-height: 2;
+        margin: 0;
+}
+#smallbranding #brandingimg{
+    float:left;
+    width:10%; 
+}
+
+#smallbranding #headsearch{
+    width:80%;
+    float:right;
+}
+#smallbranding #headsearch input{
+    font-size: 28px; 
+}
+.site-branding #headsearch input.search-field{
+    font-size: 23px !important;
+    height:2em;
+    border-radius:3px;
+    width:100%;
+    -webkit-appearance:none;
+}
+.site-branding form, .site-branding label{
+    width:100%;
+}
+.search-submit{
+    display:none;
+    visibility: hidden;
+}
+h3.homepageSubhead{
+    text-align: center;
+    width: 100%;
+    margin:auto;
+    font-family:Helvetica,helvetica-w01-light,helvetica-w02-light,sans-serif;
+    font-weight: normal;
+    color: #404040;
+    text-transform: uppercase;
+}
+main{
+    width:100%;
+    border: 1px solid #cccccc;
+    position:relative;
+    display:inline-block;
+    padding: 0;
+    background-color:#ffffff;
+}
+.widthlimit{
+    max-width:900px;
+    width:96vw;
+    margin:auto;
+}
+#masthead{
+    line-height: 1;
+    z-index: 42;
+}
+#masthead *{
+    z-index: 42;
+}
+#ddbookcol{
+    float: left;
+    width: 100%;
+    max-width: 500px;
+    border-left: none;
+    border-right: 1px solid #cccccc;
+}
+#ddbookcol h3{
+    margin: 0;
+}
+.ddBook{
+    border:none;
+    border-bottom: 1px solid #cccccc;
+    background: #ffffff;
+    color: #000000;
+    padding: 2% 10%;
+    text-align: center;
+}
+.ddBook:hover{
+    cursor:pointer;
+    color: #fe7030;
+}
+.ddBook *{                              /* VLAD ADD SPACING VERTICALLY FOR THIS STUFF*/
+    margin-top:0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+.ddBook p{
+    line-height: 1.2;
+}
+.ddbookc{
+    background:#262626;
+}
+.ddbookc *{
+    color: #ffffff;
+    text-align: left;
+}
+.ddbookc p:hover{
+    color: #fe7030;
+}
+#dropdownchapters{
+    display:none;
+    float: left;
+    /*overflow-y:auto;*/
+    max-height:80vh;
+    border-left: 1px solid #cccccc;
+    margin: 0 0 0 -1px;
+}
+#dropdownchapters p{
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+#dropdownchapters hr{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+#dropdownchapters ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 0 20px;
+}
+#dropdownchapters ul li{
+    padding: 2% 10px 2% 0;
+}
+#dropdownchapters ul *{
+    font-size: 16px;
+}
+#dropdownchapters *{
+    font-size: 15px;
+}
+#dropdowntwo{    
+    background: #EEEEEE;
+    color:#333333;
+    z-index:39;
+    width:100%;
+    float:left;
+    display:inline-block;
+    line-height: 1.5;
+    /*box-shadow: 5px 5px 12px #555555;*/
+    position:absolute;
+    overflow-y:auto;
+}
+#dropdown{    
+    background: #EEEEEE;
+    color:#333333;
+    z-index:41;
+    float:left;
+    display:inline-block;
+    line-height: 1.5;
+    /*box-shadow: 5px 5px 12px #555555;*/
+    position:fixed;
+    overflow-y: scroll;
+    max-height: 90vh;
+}
+#dropdowntwo{
+    /*overflow-y:auto;*/
+    max-height:80vh;
+}
+#dropdowntwo *,#dropdowntwo a{
+    color:#000000;
+    font-size: 15px;
+}
+#chapcol *,#chapcol a{
+    color:#000000;
+    font-size: 15px;
+    margin: 15px 0;
+}
+#chapcol p{
+    padding: 16px 0 0 0;
+    margin: 0;
+    line-height:1;
+    cursor:pointer;
+    text-align: right;
+}
+#chapcol p:hover{
+    color: #fe7030;
+}
+#chapcol p:first-of-type{
+    padding: 0 0 0 0;
+    margin: 0;
+    line-height: 1;
+    cursor:default;
+}
+#chapcol p:first-of-type:hover{
+    color: #000000;
+}
+#dropdowntwo a{
+    text-decoration:none;
+}
+#dropdowntwo a:hover{
+    color:#fe7030;
+}
+#ActiveddBook *{
+    text-shadow: 1px 0px #fe7030;
+    color:#fe7030;
+}
+#ActiveWideBook{
+    color:#fe7030;
+    margin-bottom: 0;
+}
+#ActiveColChap{
+    color:#fe7030;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+#dropdown a{
+    color:#333333;
+    text-decoration:none;
+}
+#dropdownchapters{
+    width: auto;
+    height:100%;
+}
+#dropdown a:hover{
+    color:#fe7030;
+}
+main h1{
+    margin: 0.25em auto;
+}
+main p{
+    line-height: 1.35;
+    font-size: 20px;
+	margin: 0.5em 0 0.75em 0;
+}
+main hr{
+    margin: 0.5em 0 0.7em 0;
+}
+main a, main a:active, main a:visited{
+    color:#fe7030;
+    text-decoration: none;
+}
+main a:hover{
+    color:#fe7030;
+    text-shadow: 1px 0px #fe7030;
+}
+p#path{
+    margin: 34px 0 4px 0;
+    visibility: hidden;
+    height: 1px;
+}  
+p#path *{
+    font-size: 15px;
+}
+p#bookpath{
+    margin: 4px 0 4px 0;
+}
+p#bookpath *{
+    font-size: 16px;
+}
+ p#path a,  p#path a:visited{
+    color:#fe7030;
+    text-decoration:none;
+    white-space: nowrap;
+}
+ p#path a:hover,  p#path a:active{
+    text-decoration:underline;
+}
+main h2{
+    margin: 10px 0 2px 0;
+    font-size: 48px;
+}
+main h1{
+    font-size: 22px;
+}
+main h2.singleTitle{
+    margin: 0 0 12px 0;
+    font-size: 30px;
+    clear: none;
+    line-height:1;
+}
+#author-avatar{
+    float:left;
+}
+#author-avatar img{
+    width:100%;
+    max-height:200px;
+    width:auto;
+    margin: 8px 16px 0 0;
+    position:relative;
+    z-index: 4;
+}
+.inactivebio{
+    display:none;
+}
+.inactivebioButton{
+    display:inline-block;
+    margin: 0;
+}
+.inactivebioButton, .inactivebioButton *{
+    font-size: 15px;
+}
+.inactivebioButton a{
+    color: #fe7030;
+    text-decoration:none;
+}
+.inactivebioButton a:hover{
+    text-decoration:none;
+}
+.activebio{
+    display:block;
+}
+.activebioButton{
+    display:none;
+}
+.bigButtonArea{
+    max-width:900px;
+    width:90vw;
+    margin:auto;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.bigButtonArea .wideBook{
+    padding: 2px 1%;
+    font-size: 15px;
+    width: 19.2%;
+    white-space: nowrap;
+}
+.bigButtonArea .wideBook, .bigButtonArea .wideBook *{
+    display:inline-block;
+    color:#333333;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.5;
+    text-decoration: none;
+}
+.bigButtonArea .wideBook a{
+    font-size: 15px;
+}
+.bigButtonArea .wideBook:hover, .bigButtonArea .wideBook:hover * {
+    color:#fe7030;
+    cursor: pointer;
+}
+#padarea{
+    width: 100%;
+    padding: 3% 5% 32px 5%;
+}
+.fontSettings:hover *{
+    color:#fe7030;
+    font-weight:bold;
+    cursor: pointer;    
+}
+.fontSettings{
+    float:right;
+    line-height: 1;
+    padding: 1.5% 1.5% 0 0;
+    width: 41.5px;
+    overflow:visible;
+}
+.fontSettings *{
+    color: #999999;
+    line-height: 1;
+}
+.printButton:hover *{
+    color:#fe7030;
+    font-weight:bold;
+    cursor: pointer;    
+}
+.printButton{
+    float:right;
+    line-height: 1;
+    padding: 1.5% 1.5% 0 0;
+}
+.printButton *{
+    color: #999999;
+    line-height: 1;
+}
+.settingsArea{
+    width:100%;
+    background:#262626;
+    color: #ffffff;
+    float:left;
+    line-height:1;
+    padding: 1.5%;
+    border-bottom: 1px solid #cccccc;
+}
+.noWrap{
+    white-space: nowrap;
+    display: block;
+}
+.settingsArea .noWrap{
+    white-space: nowrap;
+    width:100%;
+    clear:right;
+    padding: 4px 0;
+    max-width: 480px;
+    margin:auto;
+}
+.settingsArea *{
+    color: #ffffff;
+    line-height:1;
+    padding: 0 1%;
+    cursor: pointer;
+}
+.settingsArea .settingsGroup *{
+    color: #888888;
+}
+.settingsArea *:hover{
+    color:#fe7030;
+}
+.settingsArea .close{
+    float:right;
+    font-size: 30px;
+    padding: 2%;
+}
+.settingsArea .size{
+    padding: 6px 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.settingsArea .fontActive{
+    background-color: #fe7030;
+    border:1px solid #FF8A4A;
+    color:#ddffff;
+    font-size: 18px;
+}
+.settingsArea .fontlabel{
+    font-size: 20px;
+    cursor: default;
+}
+.settingsArea .fontlabel:hover{
+    color: #ffffff;
+}
+.settingsArea .settingsGroup{
+    padding: 0;
+    padding: 0 -2px;
+    margin: 0;
+    border-radius: 3px;
+    border: 1px solid #666666;
+    font-size: 20px;
+    float:right;
+    overflow:hidden;
+    display:inline-block;
+	vertical-align: middle;
+}
+#headLeft{
+    width:60%;
+    float:left;
+    text-align: left;
+}
+#headMid{
+    margin:0 auto;
+    text-align: center;
+    display:none;
+    padding: 4px 0 2px 0;
+}
+#headRight{
+    width:40%;
+    float:right;   
+    text-align: right; 
+}
+#headLeft, #headMid, #headRight{
+    overflow:visible;
+    max-width: 350px; 
+    background: none;
+    background-color: rgba(1,1,1,0);
+    color: rgba(1,1,1,0);
+}
+#headLeft *, #headMid *, #headRight *{
+    clear:none;
+    padding: 4px; 2%;
+}
+#dropdownbutton{
+    font-size:12px;
+    background:#000000;  
+    color: #dddddd;
+    border-radius: 10px;
+    text-align: center;
+    z-index:42;
+    line-height: 1.5;
+    float:left;
+}
+#searchbutton{
+    font-size:12px;
+    background:#000000; 
+    color: #dddddd;
+    border-radius: 10px;
+    text-align: left;
+    z-index:42;
+    line-height: 1.5;
+    float:left;
+}
+#homebutton{
+    font-size:12px;
+    background:#000000; 
+    color: #dddddd;
+    border-radius: 10px;
+    text-align: left;
+    z-index:42;
+    line-height: 1.5;
+    float:left;
+    display:block;
+}
+#logotitle{                                
+    font-size:22px;
+    background:#000000; 
+    color: #dddddd;
+    border-radius: 10px;
+    text-align: center;
+    z-index:42;
+    font-weight: 100;
+    line-height: 1;
+    font-family: goudy;
+    white-space: nowrap;
+    z-index:53;
+}
+#searcharea{
+    font-size:22px;
+    background:#000000; 
+    color: #dddddd;
+    border-radius: 10px;
+    text-align: center;
+    z-index:64;
+    line-height: 1.5;
+    position:absolute;
+    width:100%;
+    max-width: 480px;
+}
+#searcharea input{
+    width:100%;
+}
+#logout, #changepass{                                   
+    font-size:12px;
+    color: #dddddd;
+    border-radius: 10px;
+    float: right;
+    z-index:42;
+    line-height: 1.5;
+}
+#dropdownbutton:hover, #searchbutton:hover, #logout:hover, #changepass:hover, #homebutton:hover, #logotitle:hover{
+    color: #fe7030;
+    cursor:pointer;
+}
+#ddtwocenter{
+    overflow-y:wrap;
+    padding: 18px 0 18px 0;
+}
+#greybar{
+    display:none;
+    position: relative;
+    background-color: #cccccc;
+    margin: 34px 0 0 0;
+    padding: 4px 0 0 0;
+    z-index:40;
+}
+#closeOverlay{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(48,48,48,0.35);
+    z-index: 5;
+    display:none;
+}
+#chapcol{
+    float: left;
+    width: 50%;
+    border-right: 1px solid #cccccc;
+    padding: 0 5%;
+}
+#contcol{
+    float: left;
+    width: 50%;
+    border-left: 1px solid #cccccc;
+    margin: 0 0 0 -1px;
+    padding: 0 5%;
+}
+#contcol *{
+    line-height: 1.5;
+    color: #000000;
+}
+#contcol ul{
+    list-style-type: none;
+    padding: 0;
+    line-height: 1;
+    margin: 0;
+}
+#contcol li{
+    font-size: 15px;
+    line-height: 1;
+    padding: 14px 0 0 0;
+}
+#contcol a{
+    font-size: 15px;
+    line-height: 0.7;
+}
+#contcol p{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1;
+    padding: 0 0 0 0;
+}
+#dropdowntwo hr{
+    color: #cccccc;
+}
+@media screen and (min-width: 481px){
+ /*   #smallbranding #headsearch input{
+        font-size: 23px; 
+    }
+    #brandingimg{
+        width:20%;
+    }*/
+    .bigNext .symbol{
+        right: 2.5%;
+    }
+    .bigPrev .symbol{
+        left: 2.5%;
+    }
+    .bigNext, .bigPrev, .bigNext .symbol, .bigPrev .symbol{
+        display:block;
+    }
+    #dropdown, #dropdowntwo{
+        overflow-y:visible;
+    }
+    #headsearch{
+        width:90%;
+    }
+    #smallbranding img{
+        display:inline-block;
+    }
+    #dropdown, #dropdowntwo{
+        overflow-y:visible;
+    }
+    #padarea{
+        width: 100%;
+        padding: 6% 10% 32px 10%;
+    }
+    .widthlimit{
+        width:93vw;
+    }
+    .symbol{
+        font-size:26px;
+        line-height: 1.1;
+    }
+    .settingsArea .close{
+        font-size: 24px;
+        padding: 0 1%;
+    }
+}
+@media screen and (min-width: 860px){
+    .ddBook *{
+        margin: 0.6em 0;
+    }
+    #dropdownchapters *{
+        font-size: 1.4vw;
+    }
+    .smallhidetext{
+        display:inline;
+    }
+    #headMid{                                
+        display:block;
+    }
+    #homebutton{
+        display:none;
+    }
+    #headLeft, #headRight{
+        width:30%;
+    }
+    #greybar{
+        display:block;
+    }
+    .symbol{
+        font-size:18px;
+        line-height: inherit;
+    }
+    p#path{
+        margin: 4px 0 4px 0;
+        visibility: visible;
+        height: auto;
+    }
+    #padarea{
+        width: 100%;
+        padding: 9% 15% 32px 15%;
+    }
+    .widthlimit{
+        width:90vw;
+    }
+    .settingsArea .noWrap{
+        white-space: nowrap;
+        width:auto;
+        display:inline;
+        clear:none;
+        padding: 0;
+    }
+    .settingsArea .close{
+        font-size: 20px;
+    }
+    .settingsArea .size{
+        font-size: 12px;
+        border-radius: 3px;
+        padding: 0;
+    }
+    .settingsArea .fontActive{
+        background-color: #fe7030;
+        border:1px solid #FF8A4A;
+        color:#ddffff;
+        font-size: 14px;
+    }
+    .settingsArea .fontlabel{
+        font-size: 16px;
+        cursor: default;
+    }
+    .settingsArea .settingsGroup{
+        font-size: 16px;
+        float: none;
+    }
+    .bigNext .symbol{
+        right: 0;
+    }
+    .bigPrev .symbol{
+        left: 0;
+    }
+    .bigNext .symbol, .bigPrev .symbol{
+        font-size: 45px;
+    }
+}
+@media screen and (min-width: 1000px){
+    .ddBook *{
+        margin: 0.6em 0;
+    }
+    #dropdownchapters *{
+        font-size: 1.4vw;
+    }
+    .smallhidetext{
+        display:inline;
+    }
+    #homebutton{
+        display:none;
+    }
+}
+@media screen and (min-width: 1100px){ 
+    .bigNext .symbol{
+        right: 2%;
+    }
+        left: 2%;
+    }    
+    .bigNext .symbol, .bigPrev .symbol{
+        font-size:60px;
+    }
+}
+@media screen and (min-width: 1200px){ 
+    .ddBook *{
+        margin: 0.7em 0;
+    }
+    #dropdownchapters *{
+        font-size: 0.75vw;
+    }
+}
+@media screen and (min-width: 1260px){
+    .bigNext .symbol{
+        right: 10%;
+    }
+    .bigPrev .symbol{
+        left: 10%;
+    }
+    .bigNext .symbol, .bigPrev .symbol{
+        font-size: 70px;
+    }
+}
+#triangle{
+    visibility: hidden;
+    display:none;
+    position:fixed;
+    font-size: 40px;
+    vertical-align: bottom;
+    line-height: 1;
+    left: 258px;
+    z-index:420;
+    color: #EEEEEE;
+    text-shadow: -1px 0px #cccccc;
+}
+
+@media screen and (min-width: 800px){
+    #triangle{
+        visibility: visible;
+    }
+    #ddbookcol{
+        width: 270px;
+        max-width: none;
+    }
+}
